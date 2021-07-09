@@ -1,0 +1,2 @@
+<a href="{{route('student-news.edit', $id)}}" class="btn btn-primary btn-sm mb-2 mb-sm-0"><i class="fe fe-edit" aria-hidden="true"></i></a>
+<a href="javascript:void(0)" data-url="{{route('student-news.destroy',$id)}}" data-areyousure="هل أنت متأكد ؟"  class="btn btn-danger btn-sm dt-btn-delete"><i class="fe fe-trash-2" aria-hidden="true"></i></a>
