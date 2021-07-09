@@ -59,7 +59,7 @@
         </div>
     </div>
       <div class="col-lg-3">
-        <div class="form-group">
+         <div class="form-group">
             <label for="name" class="form-label">محتوي الشهاده</label>
             <div class="input-icon">
                                 <span class="input-icon-addon">
@@ -67,7 +67,7 @@
                                 </span>
                 <input  type="text" class="form-control" id="title" name="cont_certificate" placeholder="محتوي الشهاده"  value="{{old('student_subj')}}" >
             </div>
-        </div>
+             </div>
     </div>
 
     <div class="col-lg-3">
@@ -81,6 +81,7 @@
             </div>
         </div>
     </div>
+
     <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
@@ -91,7 +92,9 @@
                 </div>
             </div>
         </div>
-    </div><div class="col-lg-3">
+    </div>
+
+    <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
                 <label class="form-label">خلفية الاكاديمية</label>
@@ -101,7 +104,8 @@
                 </div>
             </div>
         </div>
-    </div><div class="col-lg-3">
+    </div>
+    <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
                 <label class="form-label">لوجو الاكاديمية الاروبيه</label>
@@ -111,7 +115,8 @@
                 </div>
             </div>
         </div>
-    </div><div class="col-lg-3">
+    </div>
+    <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
                 <label class="form-label">الختم الاول</label>
@@ -122,6 +127,7 @@
             </div>
         </div>
     </div>
+
     <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
@@ -132,8 +138,9 @@
                 </div>
             </div>
         </div>
-    </div> <div class="col-lg-3">
-        <div class="form-group">
+    </div> 
+        <div class="col-lg-3">
+            <div class="form-group">
             <div class="form-group select-image-from-media">
                 <label class="form-label">الدكتور1 </label>
                 <div class="input-group">
@@ -141,8 +148,21 @@
 
                 </div>
             </div>
+            </div>
         </div>
-    </div> <div class="col-lg-3">
+    <div class="col-lg-3">
+            <div class="form-group">
+            <div class="form-group select-image-from-media">
+                <label class="form-label">اسم الدكتور 1</label>
+                <div class="input-group">
+                    <input   type="text" name="name1" class="form-control">
+
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
                 <label class="form-label">الدكتور 2</label>
@@ -153,6 +173,19 @@
             </div>
         </div>
     </div>
+
+    <div class="col-lg-3">
+            <div class="form-group">
+            <div class="form-group select-image-from-media">
+                <label class="form-label">اسم الدكتور 2</label>
+                <div class="input-group">
+                    <input   type="text" name="name2" class="form-control">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
@@ -164,6 +197,19 @@
             </div>
         </div>
     </div>
+
+    <div class="col-lg-3">
+            <div class="form-group">
+            <div class="form-group select-image-from-media">
+                <label class="form-label">اسم الدكتور 3</label>
+                <div class="input-group">
+                    <input   type="text" name="name3" class="form-control">
+
+                </div>
+            </div>
+        </div>
+    </div>  
+
     <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
@@ -174,7 +220,20 @@
                 </div>
             </div>
         </div>
-    </div> <div class="col-lg-3">
+
+    </div>    
+    <div class="col-lg-3">
+            <div class="form-group">
+            <div class="form-group select-image-from-media">
+                <label class="form-label">اسم الدكتور 4</label>
+                <div class="input-group">
+                    <input   type="text" name="name4" class="form-control">
+
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
                 <label class="form-label">الدكتور 5</label>
@@ -184,7 +243,20 @@
                 </div>
             </div>
         </div>
-    </div> <div class="col-lg-3">
+    </div>
+
+    <div class="col-lg-3">
+            <div class="form-group">
+            <div class="form-group select-image-from-media">
+                <label class="form-label">اسم الدكتور 5</label>
+                <div class="input-group">
+                    <input   type="text" name="name5" class="form-control">
+
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="col-lg-3">
         <div class="form-group">
             <div class="form-group select-image-from-media">
                 <label class="form-label">الدكتور 6</label>
@@ -195,7 +267,17 @@
             </div>
         </div>
     </div>
+    <div class="col-lg-3">
+            <div class="form-group">
+            <div class="form-group select-image-from-media">
+                <label class="form-label">اسم الدكتور 6</label>
+                <div class="input-group">
+                    <input   type="text" name="name6" class="form-control">
 
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>

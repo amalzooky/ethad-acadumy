@@ -118,6 +118,15 @@ class CertificateCntroller extends Controller
             'pict4' => $pict4,
             'pict5' => $pict5,
             'pict6' => $pict6,
+
+            'name1' =>  $request->name1,
+            'name2' =>  $request->name2,
+            'name3' =>  $request->name3,
+            'name4' =>  $request->name4,
+            'name5' =>  $request->name5,
+            'name6' =>  $request->name6,
+            
+           
             'logowt' => $logowt,
             'logoero' => $logoero,
             'seg1' => $seg1,
@@ -168,9 +177,11 @@ class CertificateCntroller extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Latestnews $latestnews)
+    public function edit(Certificat $cerificate ,$id)
     {
-        return view("dashboard.certificates.edit",compact('latestnews'));
+       $certifs = $cerificate->find($id);
+        // dd($cerificate);
+        return view("dashboard.certificates.edit",compact('certifs'));
     }
 
     /**

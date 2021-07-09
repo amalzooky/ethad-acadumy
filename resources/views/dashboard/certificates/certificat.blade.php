@@ -1,5 +1,5 @@
 @extends('dashboard.layouts.base')
-
+{{-- @dd('here') --}}
 @section('title') @lang('dashboard.top_header.profile') @stop
 
 @section('content')
@@ -184,7 +184,7 @@
         {{--        <button class="btn btn-info" id="downloadPDF">Download PDF</button>--}}
     </div>
     <div class="invoice cert-container print-m-1">
-        <div id="content2" class="cert">
+        <div id="content2" class="cert" style='width:100%'>
 
             <img
                 src=" /dashboard/{{ $certifs->backgrond }}"
@@ -227,16 +227,18 @@
                                 class="cert-bg1"
                                 alt=""
                             />
+                            <h6> {{$certifs->name4}}</h6>
                             <img style="margin-top: -8px"
                                 src="/dashboard/{{$certifs->pict5 ?? ""}}"
                                 class="cert-bg1"
                                 alt=""
-                            />  <img style="margin-top: 76px"
+                            /> 
+                            <h6> {{$certifs->name5}}</h6>
+                             <img style="margin-top: 76px"
                                 src="/dashboard/{{$certifs->pict6 ?? ""}}"
                                 class="cert-bg1"
-                                alt=""
-                            />
-
+                                alt="" />
+                                <h6> {{$certifs->name6}}</h6>
 
 
                         </td>
@@ -259,20 +261,27 @@
                             {{--                            <span>Completed on: April 3, 2020</span>--}}
                             {{--                        </div>--}}
                         </td>
-                        <td></td>
+                        
                         <td class="tax">
-                            <img style="margin-top: -75px;"
-                                src="/dashboard/{{$certifs->pict1 ?? ""}}"                                class="cert-bg2"
-                                alt=""/>
-                            <br>
-                            <img style="margin-top: -12px"
-                                src="/dashboard/{{$certifs->pict2 ?? ""}}"                                class="cert-bg2"
-                                alt=""/>
-                            <br>
-                            <img style=" margin-top: 49px;
-"
-                                src="/dashboard/{{$certifs->pict3 ?? ""}}"                                class="cert-bg2"
-                                alt=""/>
+                                        <img style="margin-top: -75px;"
+                                            src="/dashboard/{{$certifs->pict1 ?? ""}}"                                class="cert-bg2"
+                                            alt=""/>
+                                           
+                                            <h6 style='padding: 50px 0 50px 0;' > {{$certifs->name1}}</h6>
+                                            <br>
+                                        <img style="margin-top: -12px"
+                                            src="/dashboard/{{$certifs->pict2 ?? ""}}"                                class="cert-bg2"
+                                            alt=""/>
+                                            
+                                            <h6> {{$certifs->name2}}</h6>
+                                        <br>
+                                        <img style=" margin-top: 49px; "
+                                            src="/dashboard/{{$certifs->pict3 ?? ""}}"                                class="cert-bg2"
+                                            alt=""/>
+
+                                            
+                                            <h6> {{$certifs->name3}}</h6>
+                                            <br> 
                         </td>
 
 

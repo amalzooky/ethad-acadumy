@@ -103,11 +103,13 @@ class RegisterController extends Controller
      */
     protected function create(  array $data )
     {
-//        $filePath = "";
-//        if ($data->has('card_stu')) {
-//
-//            $filePath = uploadImage('abouts', $data->card_stu);
-//        }
+        //  dd($data['card_stu']);
+       $filePath = "";
+       if ($data['card_stu']) {
+
+        $filePath = uploadImage('abouts', $data['card_stu']);
+    }
+      
 
         $user = User::create([
             'username' => $data['username'],
@@ -117,15 +119,17 @@ class RegisterController extends Controller
             'mobile_number' => $data['mobile_number'],
             'city_id' => $data['city_id'],
             'sex' => $data['sex'],
-            'card_stu' => $data['card_stu'],
+            'card_stu' => $filePath,
             'password' => Hash::make($data['password']),
+            
         ]);
 
         $user->assignRole('student');
 
         $student = Student::create([
             'major_id' => $data['major_id'],
-            'user_id' => $user->id
+            'user_id' => $user->id,
+            'membership_no'=> rand(100 ,999). $user->id
         ]);
 
          $student->subjects()->attach($data['subjects']);

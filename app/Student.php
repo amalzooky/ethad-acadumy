@@ -9,7 +9,7 @@ class Student extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['major_id', 'user_id'];
+    protected $fillable = ['major_id', 'user_id','membership_no'];
 
     public function user(){
         return $this->belongsTo("App\User");
